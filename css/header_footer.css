@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap");
+@font-face {
+  font-family: "Adobe Garamond Pro";
+  src: url("../fonts/GaramondPro/AGaramondPro-Regular.eot");
+  src: local("Adobe Garamond Pro Regular"), local("AGaramondPro-Regular"), url("../fonts/GaramondPro/AGaramondPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GaramondPro/AGaramondPro-Regular.woff") format("woff"), url("../fonts/GaramondPro/AGaramondPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -760px;
+  display: flex;
+  justify-content: space-between;
+  width: 1520px;
+}
+header .logo {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  width: 256px;
+  height: 149px;
+  background: #e0b973;
+  border-radius: 0 0 45px 45px;
+  color: #14274A;
+}
+header .logo .logo_big {
+  margin: auto auto 0;
+  font-family: "Adobe Garamond Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.15em;
+}
+header .logo .logo_small {
+  margin: 0 auto auto;
+  font-family: "Adobe Garamond Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.6em;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 696px;
+}
+header nav a {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header nav .currentpage {
+  text-decoration: underline;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+}
+footer a {
+  display: block;
+  color: #FFFFFF;
+}
+footer a:hover {
+  color: #E0B973;
+}
+footer .triangle {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 60px solid #14274A;
+}
+footer .footer_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 200px;
+  background-color: #14274A;
+  max-height: fit-content;
+}
+footer .footer_wrap .wrap_1, footer .footer_wrap .wrap_2, footer .footer_wrap .wrap_3, footer .footer_wrap .wrap_4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+}
+footer .footer_wrap .wrap_1 .wrap_1_1 {
+  font-family: "Adobe Garamond Pro";
+  max-width: fit-content;
+  font-style: normal;
+  font-weight: 700;
+}
+footer .footer_wrap .wrap_1 .wrap_1_1 p {
+  text-align: center;
+}
+footer .footer_wrap .wrap_1 .wrap_1_1 p:first-child {
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.15em;
+}
+footer .footer_wrap .wrap_1 .wrap_1_1 p:last-child {
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 0.6em;
+}
+footer .footer_wrap .wrap_1 .contacts {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+footer .footer_wrap .wrap_2, footer .footer_wrap .wrap_3, footer .footer_wrap .wrap_4 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+footer .footer_wrap .wrap_3 .wrap_3_1, footer .footer_wrap .wrap_3 .wrap_3_2, footer .footer_wrap .wrap_3 .wrap_3_3 {
+  display: flex;
+  justify-content: left;
+}
+footer .footer_wrap .wrap_3 .img_wrap {
+  width: 46px;
+}
+footer .footer_wrap .wrap_4_2 form {
+  height: 54px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+footer .footer_wrap .wrap_4_2 form input {
+  margin: 0;
+  outline: 2px solid #E0B973;
+  background-color: #14274A;
+  color: #FFFFFF;
+  font-size: 16px;
+  width: 278px;
+  height: 100%;
+  padding-left: 16px;
+}
+footer .footer_wrap .wrap_4_2 form button {
+  margin: 0;
+  background-color: #E0B973;
+  outline: 2px solid #E0B973;
+  width: 80px;
+  height: 100%;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  color: #14274A;
+}

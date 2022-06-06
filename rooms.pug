@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="css/null.css")
+        link(rel="stylesheet", href="css/header_footer.css")
+        link(rel="stylesheet", href="css/title.css")
+        link(rel="stylesheet", href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+        link(rel="stylesheet", href="css/rooms.css")
+        link(rel="stylesheet", href="css/testimonials.css")
+    body
+        - var nav_rooms = 'currentpage'
+        include modules/header.pug
+        main
+            - var bg_img = 'background-image: url(img/bg/rooms_bg.png)'
+            include modules/title.pug
+            section.content_rooms(id="content")
+                h2.rooms_title ROOMS AND RATES
+                p.rooms_text Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes, comfort isn’t our only objective, we also value good design, sleek contemporary furnishing complemented by the rich tones of nature’s palette as visible from our rooms’ sea-view windows and terraces.
+                
+                mixin card_room(type, price, img_id)
+                    .room_card
+                        .swiperWrap
+                            .swiper-wrapper
+                                .swiper-slide
+                                    img(src="img/rooms/0.jpg", alt="")
+                                .swiper-slide
+                                    img(src="img/rooms/1.jpg", alt="")
+                                .swiper-slide
+                                    img(src="img/rooms/2.jpg", alt="")
+                            .swiper-button-prev
+                            .swiper-button-next
+                            .swiper-pagination
+                        p.room_type !{type}
+                        .details_wrap
+                            a.expand_button(href="#")
+                                .plus_button 
+                                    img(src="pics/rooms/plus.svg", alt="")
+                                p.room_details VIEW ROOM DETAILS
+                            a.buy_button(href="#") $!{price} Avg/night
+                +card_room("SINGLE ROOM", "147", "card1")
+                //+card_room("DOUBLE ROOM", "155", "card2")
+                //+card_room("TWIN ROOM", "155", "card3")
+            include modules/testimonials.pug
+            script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+            script(src="js/swip.js")
+        include modules/footer.pug
+        

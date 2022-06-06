@@ -1,0 +1,118 @@
+.maintitle {
+    width: 100%;
+    height: 465px;
+    background: #14274A;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 465px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 260px;
+}
+
+.contacts_title, .contacts_text {
+    margin: 0 200px;
+}
+
+.contacts_title {
+    font-family: 'Adobe Garamond Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    color: #14274A;
+    margin-bottom: 5px;
+}
+
+.contacts_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: #14274A;
+    margin-bottom: 167px;
+}
+
+.contacts_form_wrap {
+    margin: 0 200px 463px;
+    display: flex;
+    justify-content: space-between;
+    .contacts_wrapper {
+        .line {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 49px;
+            color: #14274A;
+        }
+        .line2 {
+            display: flex;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 49px;
+            color: #14274A;
+            margin: 28px auto 54px;
+            align-items: center;
+            justify-items: center;
+            img {
+                display: block;
+                margin: auto 0 auto 30px;
+            }
+        }
+    }
+    .form_wrapper {
+        width: 570px;
+        height: 679px;
+        input, textarea {
+            border: 2px solid rgba(20, 39, 74, 0.5);
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 30px;
+            color: #14274A;
+            font-family: 'Arial';
+        }
+        .name, .email {
+            height: 78px;
+        }
+        .msg {
+            height: 353px;
+            resize: none;
+        }
+        .submit_button {
+            display: block;
+            width: 145px;
+            line-height: 78px;
+            text-align: center;
+            margin: 52px 0 0 auto;
+            background: #E0B973;
+            border-radius: 10px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 25px;
+            color: #FFFFFF;
+        }
+        .label {
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 29px;
+            color: #14274A;
+            margin: 30px 0 8px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+    }
+
+}

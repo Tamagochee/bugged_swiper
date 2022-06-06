@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="css/null.css")
+        link(rel="stylesheet", href="css/header_footer.css")
+        link(rel="stylesheet", href="css/title.css")
+        link(rel="stylesheet", href="css/home.css")
+        link(rel="stylesheet", href="css/testimonials.css")
+    body
+        - var nav_home = 'currentpage'        
+        include modules/header.pug        
+        main
+            - var bg_img = 'background-image: url(img/bg/home_bg.png)'
+            include modules/title.pug
+            section.content(id="content")
+                p.c1 All our room types are including complementary breakfast
+                .block
+                    .block_text(style="height: 334px")
+                        h2 Luxury redefined
+                        p Our rooms are designed to transport<br> you into an environment made for leisure.<br> Take your mind off the day-to-day of home<br> life and find a private paradise for yourself.
+                        a.explore_button(href="#") EXPLORE
+                    .img_wrap
+                        img(src="img/index/1.png", alt="")
+                .block
+                    .block_text(style="height: 433px")
+                        h2 Leave your worries in<br> the sand
+                        p We love life at the beach. Being close<br> to the ocean with access to endless sandy<br> beach ensures a relaxed state of mind. It<br> seems like time stands still watching the<br> ocean. 
+                        a.explore_button(href="#") EXPLORE
+                    .img_wrap
+                        img(src="img/index/2.png", alt="")
+            include modules/testimonials.pug
+        include modules/footer.pug

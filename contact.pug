@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="css/null.css")
+        link(rel="stylesheet", href="css/contact.css")
+        link(rel="stylesheet", href="css/header_footer.css")
+    body
+        - var nav_contact = 'currentpage'
+        include modules/header.pug
+        main
+            section.maintitle CONTACT-US
+            h2.contacts_title WE ARE HERE FOR YOU
+            p.contacts_text At Luxury Hotels, we take our customers seriously. Do you have any enquiries, compaints or requests, please forward it to our support desk and we will get back to you as soon as possible.
+            .contacts_form_wrap
+                .contacts_wrapper
+                    .line 497 Evergreen Rd. Roseville,<br> CA 95673
+                    a.line2(href="#")
+                        |View map
+                        img(src="pics/contacts/Arrow.svg", alt="")
+                    .line Phone: +44 345 678 903<br>Email: luxury_hotels@gmail.com
+                .form_wrapper
+                    form(action="")
+                        p.label Name
+                        input.name(type="text")
+                        p.label Email Address
+                        input.email(type="email")
+                        p.label Message
+                        textarea.msg(type="text")
+                    a.submit_button(href="#") Submit 
+        include modules/footer.pug

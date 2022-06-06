@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="css/null.css")
+        link(rel="stylesheet", href="css/header_footer.css")
+        link(rel="stylesheet", href="css/title.css")
+        link(rel="stylesheet", href="css/facilities.css")
+        link(rel="stylesheet", href="css/testimonials.css")
+    body
+        - var nav_facilities = 'currentpage'        
+        include modules/header.pug
+        main
+            - var bg_img = 'background-image: url(img/bg/facilities_bg.png)'
+            include modules/title.pug
+            section.content_facilities(id="content")
+                h2.facilities_title FACILITIES
+                p.facilities_text We want your stay at our lush hotel to be truly unforgettable.  That is why we give special attention to all of your needs so that we can ensure an experience quite uniquw. Luxury hotels offers the perfect setting with stunning views for leisure and our modern luxury resort facilities will help you enjoy the best of all. 
+                mixin card(img, text)
+                    .card_wrap
+                        img.card_image(src= img, alt="", title= text)
+                        p.card_text= text
+                +card('img/facilities/1_the_gym.png', "THE GYM")
+                +card('img/facilities/2_poolside_bar.png', "POOLSIDE BAR")
+                +card('img/facilities/3_the_spa.png', "THE SPA")
+                +card('img/facilities/4_swimming_pool.png', "SWIMMING POOL")
+                +card('img/facilities/5_restaurant.png', "RESTAURANT")
+                +card('img/facilities/6_laundry.png', "LAUNDRY")
+            include modules/testimonials.pug
+        include modules/footer.pug
